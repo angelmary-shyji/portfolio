@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import './Hero.css'
 
-const roles = ['Software Developer', 'CS Student @ Dalhousie', 'Problem Solver', 'Co-op Seeker']
+const roles = ['Software Developer', 'CS Student @ Dalhousie', 'Problem Solver', 'Builder']
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0)

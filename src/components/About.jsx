@@ -5,7 +5,7 @@ import './About.css'
 const stats = [
   { value: '3rd', label: 'Year CS Student' },
   { value: '5+', label: 'Projects Built' },
-  { value: 'Winter', label: '2026 Co-op Ready' },
+  { value: '∞', label: 'Always Learning' },
 ]
 
 export default function About() {
@@ -36,7 +36,7 @@ export default function About() {
             <h2 className="section-title">Who I Am</h2>
             <p>
               I'm a 3rd-year Computer Science student at <span className="highlight">Dalhousie University</span> (Halifax, NS),
-              enrolled in the co-op program with 5 of 8 semesters complete. I'm passionate about writing
+              I'm passionate about writing
               clean, efficient code and building software that makes a real difference.
             </p>
             <p>
@@ -44,10 +44,7 @@ export default function About() {
               data structures, and algorithm design. I love tackling challenging problems and turning
               ideas into polished products.
             </p>
-            <p>
-              Currently seeking a <span className="highlight">4–8 month co-op work term for Winter 2026</span> in
-              software development or IT — ready to contribute from day one.
-            </p>
+
             <div className="about-tags">
               {['Problem Solver', 'Fast Learner', 'Team Player', 'Detail-Oriented'].map(tag => (
                 <span key={tag} className="tag">{tag}</span>
