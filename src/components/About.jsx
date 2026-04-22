@@ -1,15 +1,23 @@
 import { motion } from 'framer-motion'
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import { useRoleData } from '../hooks/useRoleData'
 import './About.css'
 
-const stats = [
-  { value: '3rd', label: 'Year CS Student' },
-  { value: '5+', label: 'Projects Built' },
-  { value: '∞', label: 'Always Learning' },
-]
+function renderParagraph(segments, i) {
+  return (
+    <p key={i}>
+      {segments.map((seg, j) =>
+        seg.highlight
+          ? <span key={j} className="highlight">{seg.text}</span>
+          : seg.text
+      )}
+    </p>
+  )
+}
 
 export default function About() {
   const { ref, isInView } = useScrollReveal()
+  const { about } = useRoleData()
 
   const container = {
     hidden: {},
@@ -34,19 +42,9 @@ export default function About() {
           <motion.div variants={item} className="about-text">
             <p className="section-tag">// about me</p>
             <h2 className="section-title">Who I Am</h2>
-            <p>
-              I'm a 3rd-year Computer Science student at <span className="highlight">Dalhousie University</span> (Halifax, NS),
-              I'm passionate about writing
-              clean, efficient code and building software that makes a real difference.
-            </p>
-            <p>
-              My journey started with building games in Java and has evolved into full-stack web development,
-              data structures, and algorithm design. I love tackling challenging problems and turning
-              ideas into polished products.
-            </p>
-
+            {about.paragraphs.map((segments, i) => renderParagraph(segments, i))}
             <div className="about-tags">
-              {['Problem Solver', 'Fast Learner', 'Team Player', 'Detail-Oriented'].map(tag => (
+              {about.tags.map(tag => (
                 <span key={tag} className="tag">{tag}</span>
               ))}
             </div>
@@ -64,7 +62,7 @@ export default function About() {
             </div>
 
             <div className="about-stats">
-              {stats.map((s, i) => (
+              {about.stats.map((s) => (
                 <motion.div
                   key={s.label}
                   className="stat-card"

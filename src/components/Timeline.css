@@ -101,8 +101,32 @@
 .timeline-description {
   color: var(--text-secondary);
   line-height: 1.8;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   font-size: 0.95rem;
+}
+
+.timeline-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timeline-bullets li {
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  padding-left: 16px;
+  position: relative;
+}
+
+.timeline-bullets li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--accent-purple);
 }
 
 .timeline-highlights {

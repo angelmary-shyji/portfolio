@@ -8,8 +8,8 @@ const education = [
     school: 'Dalhousie University',
     location: 'Halifax, NS',
     period: '2023 – 2027',
-    description: 'Co-op program — 5 of 8 semesters complete. Focused on software development, algorithms, data structures, and system design.',
-    highlights: ['Co-op Program', 'Dean\'s List Eligible', 'Data Structures', 'Algorithms', 'OOP', 'Database Systems'],
+    description: '5 of 8 semesters complete. Focused on software development, algorithms, data structures, and system design.',
+    highlights: ['Dean\'s List Eligible', 'Data Structures', 'Algorithms', 'OOP', 'Database Systems'],
     icon: '🎓',
   },
 ]

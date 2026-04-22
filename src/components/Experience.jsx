@@ -1,21 +1,11 @@
 import { motion } from 'framer-motion'
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import { useRoleData } from '../hooks/useRoleData'
 import './Timeline.css'
-
-const experience = [
-  {
-    role: 'Cashier & Customer Service',
-    company: 'Chatime',
-    location: 'Halifax, NS',
-    period: 'May 2024 – Present',
-    description: 'Delivered exceptional customer experiences in a fast-paced environment, handling transactions, resolving customer issues, and collaborating with team members to maintain service quality.',
-    highlights: ['Customer Service', 'Team Collaboration', 'Problem Solving', 'Communication', 'Time Management'],
-    icon: '💼',
-  },
-]
 
 export default function Experience() {
   const { ref, isInView } = useScrollReveal()
+  const { experience } = useRoleData()
 
   return (
     <section id="experience" className="timeline-section alt-bg">
@@ -53,6 +43,13 @@ export default function Experience() {
                     <span className="timeline-period">{item.period}</span>
                   </div>
                   <p className="timeline-description">{item.description}</p>
+                  {item.bullets && item.bullets.length > 0 && (
+                    <ul className="timeline-bullets">
+                      {item.bullets.map((b, j) => (
+                        <li key={j}>{b}</li>
+                      ))}
+                    </ul>
+                  )}
                   <div className="timeline-highlights">
                     {item.highlights.map(h => (
                       <span key={h} className="highlight-chip">{h}</span>

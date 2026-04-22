@@ -1,27 +1,11 @@
 import { motion } from 'framer-motion'
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import { useRoleData } from '../hooks/useRoleData'
 import './Skills.css'
-
-const skillGroups = [
-  {
-    category: 'Languages',
-    icon: '< />',
-    skills: ['Java', 'Python', 'JavaScript', 'C', 'HTML', 'CSS', 'SQL'],
-  },
-  {
-    category: 'Frameworks & Tools',
-    icon: '⚙',
-    skills: ['React', 'Node.js', 'Git', 'GitHub', 'VS Code', 'IntelliJ', 'Eclipse'],
-  },
-  {
-    category: 'Concepts',
-    icon: '∑',
-    skills: ['Data Structures', 'Algorithms', 'OOP', 'REST APIs', 'Databases', 'Agile'],
-  },
-]
 
 export default function Skills() {
   const { ref, isInView } = useScrollReveal()
+  const { skills } = useRoleData()
 
   const container = {
     hidden: {},
@@ -54,12 +38,12 @@ export default function Skills() {
           </motion.div>
 
           <div className="skills-grid">
-            {skillGroups.map((group) => (
+            {skills.map((group) => (
               <motion.div
                 key={group.category}
                 className="skill-card"
                 variants={cardVariant}
-                whileHover={{ y: -8, borderColor: 'rgba(139, 92, 246, 0.5)' }}
+                whileHover={{ y: -8, borderColor: 'var(--border-hover)' }}
                 transition={{ duration: 0.2 }}
               >
                 <div className="skill-card-header">
@@ -72,7 +56,7 @@ export default function Skills() {
                       key={skill}
                       className="skill-chip"
                       variants={chipVariant}
-                      whileHover={{ scale: 1.08, background: 'rgba(139, 92, 246, 0.2)' }}
+                      whileHover={{ scale: 1.08, background: 'rgba(var(--accent-purple-rgb), 0.2)' }}
                     >
                       {skill}
                     </motion.span>
