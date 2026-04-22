@@ -69,15 +69,14 @@ export default function Contact() {
             <p className="section-tag">// say hello</p>
             <h2 className="section-title">Get In Touch</h2>
             <p className="section-subtitle">
-              Open to co-op opportunities, collaborations, and conversations.
+              Always happy to connect, collaborate, or just have a conversation.
             </p>
           </motion.div>
 
           <div className="contact-grid">
             <motion.div variants={item} className="contact-info">
               <p className="contact-blurb">
-                I'm currently seeking a <strong>Winter 2026 co-op placement</strong>. Whether you have a
-                position, a project idea, or just want to connect — my inbox is always open!
+                Whether you have a project idea, want to collaborate, or just want to connect — my inbox is always open!
               </p>
 
               <div className="contact-items">

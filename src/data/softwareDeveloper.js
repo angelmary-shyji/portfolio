@@ -19,11 +19,6 @@ export const softwareDeveloperData = {
         { text: 'Firebase', highlight: true },
         { text: ', RESTful APIs, and serverless cloud, with a strong emphasis on clean architecture and maintainable code.' },
       ],
-      [
-        { text: 'Aiming for software engineering roles at ' },
-        { text: 'Google, Amazon, and Meta', highlight: true },
-        { text: ' — where I can work on systems at scale and solve hard problems.' },
-      ],
     ],
     tags: ['Problem Solver', 'Fast Learner', 'Systems Thinker', 'Detail-Oriented'],
     stats: [
