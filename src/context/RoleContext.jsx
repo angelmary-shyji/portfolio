@@ -5,7 +5,7 @@ export const ROLES = [
     id: 'software-developer',
     label: 'Software Developer',
     tagline: 'Full-stack engineering & system design',
-    color: '#8b5cf6',
+    color: '#569cd6',
     locked: false,
   },
   {

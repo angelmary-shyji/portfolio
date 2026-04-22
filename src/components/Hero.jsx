@@ -1,10 +1,19 @@
 import { useEffect, useState, useRef } from 'react'
 import { motion } from 'framer-motion'
+import { useRole } from '../context/RoleContext'
+import { useRoleData } from '../hooks/useRoleData'
 import './Hero.css'
 
-const roles = ['Software Developer', 'CS Student @ Dalhousie', 'Problem Solver', 'Builder']
+const particleColors = {
+  'software-developer': '86, 156, 214',
+  'analyst': '59, 130, 246',
+  'web-developer': '232, 121, 249',
+}
 
 export default function Hero() {
+  const { role } = useRole()
+  const { hero } = useRoleData()
+  const roles = hero.roles
   const [roleIndex, setRoleIndex] = useState(0)
   const [displayed, setDisplayed] = useState('')
   const [deleting, setDeleting] = useState(false)
@@ -41,6 +50,7 @@ export default function Hero() {
     const canvas = canvasRef.current
     if (!canvas) return
     const ctx = canvas.getContext('2d')
+    const color = particleColors[role] || '139, 92, 246'
     let animId
     let particles = []
 
@@ -67,7 +77,7 @@ export default function Hero() {
       particles.forEach(p => {
         ctx.beginPath()
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2)
-        ctx.fillStyle = `rgba(139, 92, 246, ${p.opacity})`
+        ctx.fillStyle = `rgba(${color}, ${p.opacity})`
         ctx.fill()
         p.x += p.dx
         p.y += p.dy
@@ -82,7 +92,7 @@ export default function Hero() {
       cancelAnimationFrame(animId)
       window.removeEventListener('resize', resize)
     }
-  }, [])
+  }, [role])
 
   return (
     <section id="hero" className="hero">
