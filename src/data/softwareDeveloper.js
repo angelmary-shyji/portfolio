@@ -69,7 +69,7 @@ export const softwareDeveloperData = {
       tags: ['React', 'Framer Motion', 'CSS', 'Vite'],
       color: '#8b5cf6',
       icon: '🌐',
-      github: 'https://github.com/angelmary-shyji',
+      github: 'https://github.com/angelmary-shyji/portfolio',
     },
     {
       title: 'Pac-Man Game',
@@ -78,7 +78,7 @@ export const softwareDeveloperData = {
       tags: ['Java', 'OOP', 'Game Dev', 'Algorithms'],
       color: '#f59e0b',
       icon: '👾',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/Pac-Man',
     },
     {
       title: 'Flappy Bird Clone',
@@ -87,7 +87,7 @@ export const softwareDeveloperData = {
       tags: ['Java', 'Physics', 'Game Dev', 'Swing'],
       color: '#10b981',
       icon: '🐦',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/Flappy-Bird',
     },
     {
       title: 'Huffman Coding',
@@ -96,7 +96,7 @@ export const softwareDeveloperData = {
       tags: ['Java', 'Algorithms', 'Data Structures', 'Compression'],
       color: '#3b82f6',
       icon: '🗜️',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/HuffmanCoding',
     },
     {
       title: 'Collatz Sequence Analyzer',
@@ -105,7 +105,7 @@ export const softwareDeveloperData = {
       tags: ['Java', 'Algorithms', 'Optimization'],
       color: '#ec4899',
       icon: '📊',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/CousinOfCollatzOptimized',
     },
     {
       title: 'To-Do List App',
@@ -114,7 +114,7 @@ export const softwareDeveloperData = {
       tags: ['JavaScript', 'HTML', 'CSS'],
       color: '#8b5cf6',
       icon: '✅',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/ToDoList',
     },
     {
       title: 'Digital Clock',
@@ -123,7 +123,7 @@ export const softwareDeveloperData = {
       tags: ['JavaScript', 'HTML', 'CSS'],
       color: '#06b6d4',
       icon: '🕐',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/digital-clock',
     },
     {
       title: 'Advanced Calculator',
@@ -132,7 +132,7 @@ export const softwareDeveloperData = {
       tags: ['JavaScript', 'HTML', 'CSS'],
       color: '#f97316',
       icon: '🔢',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/advanced-calculator',
     },
   ],
 

@@ -68,7 +68,7 @@ export const analystData = {
       tags: ['React', 'Framer Motion', 'CSS', 'Vite'],
       color: '#3b82f6',
       icon: '🌐',
-      github: 'https://github.com/angelmary-shyji',
+      github: 'https://github.com/angelmary-shyji/portfolio',
     },
     {
       title: 'Collatz Sequence Analyzer',
@@ -77,7 +77,7 @@ export const analystData = {
       tags: ['Java', 'Algorithm Analysis', 'Performance', 'Optimization'],
       color: '#3b82f6',
       icon: '📊',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/CousinOfCollatzOptimized',
     },
     {
       title: 'Huffman Coding',
@@ -86,7 +86,7 @@ export const analystData = {
       tags: ['Java', 'Data Analysis', 'Algorithms', 'Compression'],
       color: '#60a5fa',
       icon: '🗜️',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/HuffmanCoding',
     },
     {
       title: 'To-Do List App',
@@ -95,7 +95,7 @@ export const analystData = {
       tags: ['JavaScript', 'HTML', 'CSS', 'Workflow Design'],
       color: '#818cf8',
       icon: '✅',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/ToDoList',
     },
     {
       title: 'Advanced Calculator',
@@ -104,7 +104,7 @@ export const analystData = {
       tags: ['JavaScript', 'HTML', 'CSS', 'Systems Logic'],
       color: '#38bdf8',
       icon: '🔢',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/advanced-calculator',
     },
     {
       title: 'Digital Clock',
@@ -113,7 +113,7 @@ export const analystData = {
       tags: ['JavaScript', 'HTML', 'CSS'],
       color: '#0ea5e9',
       icon: '🕐',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/digital-clock',
     },
     {
       title: 'Pac-Man Game',
@@ -122,7 +122,7 @@ export const analystData = {
       tags: ['Java', 'OOP', 'System Design', 'Algorithms'],
       color: '#6366f1',
       icon: '👾',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/Pac-Man',
     },
     {
       title: 'Flappy Bird Clone',
@@ -131,7 +131,7 @@ export const analystData = {
       tags: ['Java', 'OOP', 'Game Dev'],
       color: '#4f46e5',
       icon: '🐦',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/Flappy-Bird',
     },
   ],
 

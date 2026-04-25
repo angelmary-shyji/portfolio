@@ -70,7 +70,7 @@ export const webDeveloperData = {
       tags: ['React', 'Framer Motion', 'CSS', 'Vite'],
       color: '#e879f9',
       icon: '🌐',
-      github: 'https://github.com/angelmary-shyji',
+      github: 'https://github.com/angelmary-shyji/portfolio',
     },
     {
       title: 'To-Do List App',
@@ -79,7 +79,7 @@ export const webDeveloperData = {
       tags: ['JavaScript', 'HTML', 'CSS', 'DOM'],
       color: '#f0abfc',
       icon: '✅',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/ToDoList',
     },
     {
       title: 'Digital Clock',
@@ -88,7 +88,7 @@ export const webDeveloperData = {
       tags: ['JavaScript', 'HTML', 'CSS', 'UI Design'],
       color: '#fb923c',
       icon: '🕐',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/digital-clock',
     },
     {
       title: 'Advanced Calculator',
@@ -97,7 +97,7 @@ export const webDeveloperData = {
       tags: ['JavaScript', 'HTML', 'CSS', 'UI Design'],
       color: '#fbbf24',
       icon: '🔢',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/advanced-calculator',
     },
     {
       title: 'Pac-Man Game',
@@ -106,7 +106,7 @@ export const webDeveloperData = {
       tags: ['Java', 'OOP', 'Game Dev', 'UI'],
       color: '#c084fc',
       icon: '👾',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/Pac-Man',
     },
     {
       title: 'Flappy Bird Clone',
@@ -115,7 +115,7 @@ export const webDeveloperData = {
       tags: ['Java', 'Game Dev', 'UI', 'Physics'],
       color: '#a78bfa',
       icon: '🐦',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/Flappy-Bird',
     },
     {
       title: 'Huffman Coding',
@@ -124,7 +124,7 @@ export const webDeveloperData = {
       tags: ['Java', 'Algorithms', 'Data Structures'],
       color: '#818cf8',
       icon: '🗜️',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/HuffmanCoding',
     },
     {
       title: 'Collatz Sequence Analyzer',
@@ -133,7 +133,7 @@ export const webDeveloperData = {
       tags: ['Java', 'Algorithms', 'Performance'],
       color: '#7dd3fc',
       icon: '📊',
-      github: '#',
+      github: 'https://github.com/angelmary-shyji/CousinOfCollatzOptimized',
     },
   ],
 
