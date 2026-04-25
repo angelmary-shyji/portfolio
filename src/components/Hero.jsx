@@ -7,7 +7,7 @@ import './Hero.css'
 const particleColors = {
   'software-developer': '86, 156, 214',
   'analyst': '59, 130, 246',
-  'web-developer': '232, 121, 249',
+  'web-developer': '251, 113, 133',
 }
 
 export default function Hero() {

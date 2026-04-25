@@ -19,7 +19,7 @@ export const ROLES = [
     id: 'web-developer',
     label: 'Web Developer',
     tagline: 'Creative interfaces & front-end experiences',
-    color: '#e879f9',
+    color: '#fb7185',
     locked: false,
   },
   {

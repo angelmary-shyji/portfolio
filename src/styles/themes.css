@@ -110,30 +110,86 @@ body[data-role="analyst"] .contact-glow {
   background: radial-gradient(ellipse, rgba(59, 130, 246, 0.1), transparent 70%);
 }
 
-/* ── Web Developer (vibrant fuchsia / orange) ── */
+/* ── Web Developer (Sunset) ── */
+body[data-role="web-developer"] .hero-name {
+  background: linear-gradient(135deg, #ffffff 0%, #fb7185 45%, #f97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 body[data-role="web-developer"] {
-  --bg-primary: #0d0014;
-  --bg-secondary: #160022;
-  --bg-card: rgba(232, 121, 249, 0.04);
-  --bg-card-hover: rgba(232, 121, 249, 0.09);
-  --border: rgba(232, 121, 249, 0.12);
-  --border-hover: rgba(232, 121, 249, 0.55);
-  --accent-purple: #e879f9;
-  --accent-cyan: #fb923c;
+  --bg-primary: #0f0818;
+  --bg-secondary: #1a0f2a;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --bg-card-hover: rgba(249, 115, 22, 0.08);
+  --border: rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(251, 113, 133, 0.55);
+  --text-primary: #fff1f0;
+  --text-secondary: #c4a0a8;
+  --accent-purple: #fb7185;
+  --accent-cyan: #f97316;
   --accent-pink: #fbbf24;
-  --gradient: linear-gradient(135deg, #e879f9, #fb923c);
-  --gradient-text: linear-gradient(135deg, #f0abfc, #fdba74);
-  --shadow-glow: 0 0 40px rgba(232, 121, 249, 0.2);
-}
-
-body[data-role="web-developer"] ::selection {
-  background: rgba(232, 121, 249, 0.4);
-}
-
-body[data-role="web-developer"] ::-webkit-scrollbar-thumb {
-  background: #e879f9;
+  --gradient: linear-gradient(135deg, #7c3aed, #fb7185, #f97316);
+  --gradient-text: linear-gradient(135deg, #fb7185, #fdba74);
+  --shadow-glow: 0 0 40px rgba(251, 113, 133, 0.18);
 }
 
 body[data-role="web-developer"] {
   background-color: var(--bg-primary);
+}
+
+body[data-role="web-developer"] ::selection {
+  background: rgba(251, 113, 133, 0.35);
+}
+
+body[data-role="web-developer"] ::-webkit-scrollbar-thumb {
+  background: #fb7185;
+}
+
+/* Sunset glow in hero */
+body[data-role="web-developer"] .hero-glow-1 {
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.18), transparent 70%);
+}
+
+body[data-role="web-developer"] .hero-glow-2 {
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.14), transparent 70%);
+}
+
+/* Override hardcoded purple values */
+body[data-role="web-developer"] .tag {
+  background: rgba(251, 113, 133, 0.1);
+  border-color: rgba(251, 113, 133, 0.25);
+}
+
+body[data-role="web-developer"] .avatar-ring {
+  border-color: rgba(251, 113, 133, 0.35);
+}
+
+body[data-role="web-developer"] .ring-2 {
+  border-color: rgba(249, 115, 22, 0.2);
+}
+
+body[data-role="web-developer"] .avatar-inner {
+  box-shadow: 0 0 60px rgba(251, 113, 133, 0.3);
+}
+
+body[data-role="web-developer"] .timeline-dot {
+  border-color: #fb7185;
+  box-shadow: 0 0 20px rgba(251, 113, 133, 0.35);
+}
+
+body[data-role="web-developer"] .highlight-chip {
+  background: rgba(251, 113, 133, 0.1);
+  border-color: rgba(251, 113, 133, 0.2);
+  color: #fb7185;
+}
+
+body[data-role="web-developer"] .contact-item-icon {
+  background: rgba(251, 113, 133, 0.1);
+  border-color: rgba(251, 113, 133, 0.2);
+}
+
+body[data-role="web-developer"] .contact-glow {
+  background: radial-gradient(ellipse, rgba(249, 115, 22, 0.1), transparent 70%);
 }
