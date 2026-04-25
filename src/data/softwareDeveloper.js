@@ -63,6 +63,15 @@ export const softwareDeveloperData = {
 
   projects: [
     {
+      title: 'Personal Portfolio',
+      description:
+        'Multi-role portfolio with a fullscreen role-selector, per-role CSS theming via custom properties, role-specific content, animated particle canvas, and a floating role-switcher. Built with React and Framer Motion.',
+      tags: ['React', 'Framer Motion', 'CSS', 'Vite'],
+      color: '#8b5cf6',
+      icon: '🌐',
+      github: 'https://github.com/angelmary-shyji',
+    },
+    {
       title: 'Pac-Man Game',
       description:
         'Java recreation of the classic Pac-Man arcade game. Integrated OOP for collision detection, score tracking, and game logic with engaging animations and responsive controls.',

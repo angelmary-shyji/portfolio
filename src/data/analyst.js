@@ -62,6 +62,15 @@ export const analystData = {
 
   projects: [
     {
+      title: 'Personal Portfolio',
+      description:
+        'Multi-role portfolio with a fullscreen role-selector, per-role CSS theming, role-specific content, and a floating role-switcher. Demonstrates structured system design, component architecture, and data-driven rendering.',
+      tags: ['React', 'Framer Motion', 'CSS', 'Vite'],
+      color: '#3b82f6',
+      icon: '🌐',
+      github: 'https://github.com/angelmary-shyji',
+    },
+    {
       title: 'Collatz Sequence Analyzer',
       description:
         'Analyzes the Cousin of Collatz sequence to determine the number with the longest sequence in a range. Optimized to measure execution time — demonstrating systematic performance analysis and algorithmic thinking.',
