@@ -56,7 +56,8 @@ src/
 ├── data/
 │   ├── roleData.js        # Routes role ID → role data
 │   ├── softwareDeveloper.js
-│   └── analyst.js
+│   ├── analyst.js
+│   └── webDeveloper.js
 ├── hooks/
 │   ├── useRoleData.js     # Returns data for the active role
 │   └── useScrollReveal.js
@@ -64,6 +65,19 @@ src/
     ├── global.css         # Base styles and CSS variables
     └── themes.css         # Per-role CSS variable overrides
 ```
+
+## Projects
+
+| Project | Stack | Roles Featured In |
+|---|---|---|
+| Personal Portfolio | React, Framer Motion, Vite, CSS | All roles |
+| To-Do List App | JavaScript, HTML, CSS | Software Developer, Web Developer |
+| Digital Clock | JavaScript, HTML, CSS | Software Developer, Web Developer |
+| Advanced Calculator | JavaScript, HTML, CSS | Software Developer, Web Developer |
+| Pac-Man Game | Java, OOP | Software Developer, Analyst, Web Developer |
+| Flappy Bird Clone | Java, OOP | Software Developer, Analyst, Web Developer |
+| Huffman Coding | Java, Algorithms | Software Developer, Analyst, Web Developer |
+| Collatz Sequence Analyzer | Java, Algorithms | Software Developer, Analyst, Web Developer |
 
 ## Adding a New Role
 
