@@ -136,8 +136,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.65 }}
         >
-          3rd-year Computer Science student passionate about building<br />
-          elegant software solutions and creating meaningful experiences.
+          {hero.description}
         </motion.p>
 
         <motion.div

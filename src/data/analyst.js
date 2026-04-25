@@ -29,8 +29,7 @@ export const analystData = {
 
   hero: {
     roles: ['Systems Analyst', 'CS Student @ Dalhousie', 'Problem Solver', 'Process Improver'],
-    description:
-      'Computer Science student focused on systems analysis,\nworkflow optimization, and enterprise-scale technical environments.',
+    description: 'Computer Science student focused on systems analysis, workflow optimization, and enterprise-scale technical environments.',
   },
 
   skills: [

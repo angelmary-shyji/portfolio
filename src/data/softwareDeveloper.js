@@ -30,8 +30,7 @@ export const softwareDeveloperData = {
 
   hero: {
     roles: ['Software Developer', 'CS Student @ Dalhousie', 'Problem Solver', 'Builder'],
-    description:
-      'Computer Science student passionate about building practical,\nscalable software — from algorithms to full-stack applications.',
+    description: 'Computer Science student passionate about building practical, scalable software — from algorithms to full-stack applications.',
   },
 
   skills: [
