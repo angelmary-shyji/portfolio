@@ -1,21 +1,43 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
+import emailjs from '@emailjs/browser'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import './Contact.css'
 
 export default function Contact() {
   const { ref, isInView } = useScrollReveal()
+  const formRef = useRef(null)
   const [form, setForm] = useState({ name: '', email: '', message: '' })
   const [focused, setFocused] = useState(null)
   const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState(null)
 
   const handleChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }))
 
   const handleSubmit = e => {
     e.preventDefault()
-    setSent(true)
-    setForm({ name: '', email: '', message: '' })
-    setTimeout(() => setSent(false), 4000)
+    setSending(true)
+    setError(null)
+
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        from_name: form.name,
+        from_email: form.email,
+        message: form.message,
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    ).then(() => {
+      setSending(false)
+      setSent(true)
+      setForm({ name: '', email: '', message: '' })
+      setTimeout(() => setSent(false), 4000)
+    }).catch(() => {
+      setSending(false)
+      setError('Something went wrong. Please try emailing me directly.')
+    })
   }
 
   const container = {
@@ -162,17 +184,22 @@ export default function Contact() {
                 />
               </div>
 
+              {error && <p className="form-error">{error}</p>}
+
               <motion.button
                 type="submit"
                 className="submit-btn"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
+                disabled={sending}
               >
                 {sent ? (
                   <span className="sent-msg">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                     Message Sent!
                   </span>
+                ) : sending ? (
+                  <span>Sending...</span>
                 ) : (
                   <span>
                     Send Message

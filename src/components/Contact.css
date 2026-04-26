@@ -218,3 +218,9 @@ a.contact-item-value:hover {
     gap: 40px;
   }
 }
+
+.form-error {
+  color: #f87171;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
