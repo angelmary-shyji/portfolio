@@ -43,13 +43,15 @@ export const ROLES = [
 const RoleContext = createContext(null)
 
 export function RoleProvider({ children }) {
-  const [role, setRole] = useState(null)
+  const [role, setRole] = useState(() => localStorage.getItem('portfolio-role') || null)
 
   useEffect(() => {
     if (role) {
       document.body.setAttribute('data-role', role)
+      localStorage.setItem('portfolio-role', role)
     } else {
       document.body.removeAttribute('data-role')
+      localStorage.removeItem('portfolio-role')
     }
   }, [role])
 
