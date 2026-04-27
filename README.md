@@ -8,8 +8,8 @@ A multi-role personal portfolio built with React, featuring a role-selector land
 |---|---|---|
 | Software Developer | VS Code Dark (charcoal + teal/blue) | ✅ Live |
 | Analyst | Deep Navy (blue accents) | ✅ Live |
-| Web Developer | Vibrant fuchsia / orange | ✅ Live |
-| Data Analyst | — | 🔒 Certification Underway |
+| Web Developer | Sunset (coral/rose + orange) | ✅ Live |
+| Data Analyst | Warm Amber / Notebook | 🔒 Certification Underway |
 | Cybersecurity | — | 🔒 Certification Underway |
 
 ## Features
@@ -21,6 +21,7 @@ A multi-role personal portfolio built with React, featuring a role-selector land
 - **Particle canvas** — animated background particles that match each role's accent color
 - **Typewriter effect** — role-specific cycling text in the hero section
 - **Scroll-reveal animations** — sections animate in using Framer Motion
+- **Working contact form** — EmailJS integration sends messages directly to inbox
 - **Fully responsive** — mobile-friendly across all breakpoints
 
 ## Tech Stack
@@ -29,6 +30,7 @@ A multi-role personal portfolio built with React, featuring a role-selector land
 - **Vite 8** — build tool and dev server
 - **Framer Motion** — animations and transitions
 - **CSS Custom Properties** — runtime theme switching without a CSS-in-JS library
+- **EmailJS** — contact form email delivery (no backend required)
 
 ## Getting Started
 
@@ -45,6 +47,13 @@ npm run build
 # Preview production build
 npm run preview
 ```
+
+> **Contact form:** requires a `.env` file with your EmailJS credentials (not committed to git):
+> ```
+> VITE_EMAILJS_SERVICE_ID=your_service_id
+> VITE_EMAILJS_TEMPLATE_ID=your_template_id
+> VITE_EMAILJS_PUBLIC_KEY=your_public_key
+> ```
 
 ## Project Structure
 
