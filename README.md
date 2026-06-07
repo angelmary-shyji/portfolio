@@ -7,10 +7,10 @@ A multi-role personal portfolio built with React, featuring a role-selector land
 | Role | Theme | Status |
 |---|---|---|
 | Software Developer | VS Code Dark (charcoal + teal/blue) | ✅ Live |
-| Analyst | Deep Navy (blue accents) | ✅ Live |
 | Web Developer | Sunset (coral/rose + orange) | ✅ Live |
 | Data Analyst | Warm Amber / Notebook | 🔒 Certification Underway |
 | Cybersecurity | — | 🔒 Certification Underway |
+| AI / ML Engineer | — | 🔒 Certification Underway |
 
 ## Features
 
