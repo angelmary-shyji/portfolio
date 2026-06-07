@@ -8,14 +8,7 @@ export const ROLES = [
     color: '#569cd6',
     locked: false,
   },
-  {
-    id: 'analyst',
-    label: 'Analyst',
-    tagline: 'Technical operations & process improvement',
-    color: '#3b82f6',
-    locked: false,
-  },
-  {
+{
     id: 'web-developer',
     label: 'Web Developer',
     tagline: 'Creative interfaces & front-end experiences',
@@ -35,6 +28,14 @@ export const ROLES = [
     label: 'Cybersecurity',
     tagline: 'Securing systems & digital infrastructure',
     color: '#22c55e',
+    locked: true,
+    lockLabel: 'Certification Underway',
+  },
+  {
+    id: 'ai-ml-engineer',
+    label: 'AI / ML Engineer',
+    tagline: 'Building intelligent systems & machine learning solutions',
+    color: '#a855f7',
     locked: true,
     lockLabel: 'Certification Underway',
   },
