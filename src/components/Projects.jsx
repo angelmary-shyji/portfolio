@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useScrollReveal } from '../hooks/useScrollReveal'
-import { useRoleData } from '../hooks/useRoleData'
+import { portfolioData } from '../data/portfolio'
 import './Projects.css'
 
 export default function Projects() {
   const { ref, isInView } = useScrollReveal()
-  const { projects } = useRoleData()
+  const { projects } = portfolioData
   const [hovered, setHovered] = useState(null)
 
   const container = {

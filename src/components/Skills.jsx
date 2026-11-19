@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
 import { useScrollReveal } from '../hooks/useScrollReveal'
-import { useRoleData } from '../hooks/useRoleData'
+import { portfolioData } from '../data/portfolio'
 import './Skills.css'
 
 export default function Skills() {
   const { ref, isInView } = useScrollReveal()
-  const { skills } = useRoleData()
+  const { skills } = portfolioData
 
   const container = {
     hidden: {},

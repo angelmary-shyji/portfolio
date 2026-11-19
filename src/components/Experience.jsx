@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
 import { useScrollReveal } from '../hooks/useScrollReveal'
-import { useRoleData } from '../hooks/useRoleData'
+import { portfolioData } from '../data/portfolio'
 import './Timeline.css'
 
 export default function Experience() {
   const { ref, isInView } = useScrollReveal()
-  const { experience } = useRoleData()
+  const { experience } = portfolioData
 
   return (
     <section id="experience" className="timeline-section alt-bg">

@@ -1,18 +1,12 @@
 import { useEffect, useState, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { useRole } from '../context/RoleContext'
-import { useRoleData } from '../hooks/useRoleData'
+import { portfolioData } from '../data/portfolio'
 import './Hero.css'
 
-const particleColors = {
-  'software-developer': '86, 156, 214',
-  'analyst': '59, 130, 246',
-  'web-developer': '251, 113, 133',
-}
+const PARTICLE_COLOR = '86, 156, 214'
 
 export default function Hero() {
-  const { role } = useRole()
-  const { hero } = useRoleData()
+  const { hero } = portfolioData
   const roles = hero.roles
   const [roleIndex, setRoleIndex] = useState(0)
   const [displayed, setDisplayed] = useState('')
@@ -50,7 +44,7 @@ export default function Hero() {
     const canvas = canvasRef.current
     if (!canvas) return
     const ctx = canvas.getContext('2d')
-    const color = particleColors[role] || '139, 92, 246'
+    const color = PARTICLE_COLOR
     let animId
     let particles = []
 
@@ -92,7 +86,7 @@ export default function Hero() {
       cancelAnimationFrame(animId)
       window.removeEventListener('resize', resize)
     }
-  }, [role])
+  }, [])
 
   return (
     <section id="hero" className="hero">

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useScrollReveal } from '../hooks/useScrollReveal'
-import { useRoleData } from '../hooks/useRoleData'
+import { portfolioData } from '../data/portfolio'
 import './About.css'
 
 function renderParagraph(segments, i) {
@@ -17,7 +17,7 @@ function renderParagraph(segments, i) {
 
 export default function About() {
   const { ref, isInView } = useScrollReveal()
-  const { about } = useRoleData()
+  const { about } = portfolioData
 
   const container = {
     hidden: {},
